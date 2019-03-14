@@ -14,6 +14,7 @@ import java.util.UUID;
 @Log4j2
 @Component
 @RequiredArgsConstructor
+@org.springframework.context.annotation.Profile("demo")
 public class SampleDataInitializer implements ApplicationListener<ApplicationReadyEvent> {
 
     private final ProfileRepository profileRepository;
